@@ -32,11 +32,10 @@ Unzip the downloaded zip file and move all dataset files to the "data/personaliz
 To train the model, use the following code:
 
 ```
-python run_personalized_sa.py --task_name acl-2023 \
+python run_cross_context_sa.py --task_name yelp-2013 \
     --model_type bert \
     --model_size base \
     --epochs 5 \
-    --incremental \
     --do_train \
     --weight_decay 0.0 \
     --learning_rate 5e-5 \
@@ -48,11 +47,10 @@ python run_personalized_sa.py --task_name acl-2023 \
 To evaluate a trained model with the specified parameters, use the following code:
 
 ```
-python run_personalized_sa.py --task_name acl-2023 \
+python run_cross_context_sa.py --task_name yelp-2013 \
     --model_type bert \
     --model_size base \
     --epochs 5 \
-    --incremental \
     --do_eval \
     --weight_decay 0.0 \
     --learning_rate 5e-5 \
